@@ -1,5 +1,10 @@
 import * as THREE from './libs/three.module.js';
 import { OrbitControls } from './libs/OrbitControls.js';
+//自訂路徑
+
+// import * as THREE from './node_modules/three/build/three.module.js';
+// import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls.js';
+//NODE路徑
 export default
 class App {
     constructor(){
