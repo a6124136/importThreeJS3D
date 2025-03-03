@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./three.js/build/three.module.js",
+                "OrbitControls": "./three.js/examples/jsm/controls/OrbitControls.js"
+            }
+        }</script>
+        <!-- 導入路徑地圖?有這個才能讀取到Three的module，否則會回報找不到'three'錯誤-->
+
+</head>
+<body>
+    <script type="module">
+        import App from './app.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            const app = new App();
+            window.app=app;
+            // 頁面加載後產生APP實例
+        });
+    </script>
+</body>
+</html>
